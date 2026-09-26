@@ -1,0 +1,37 @@
+{
+  "name": "genpark-swarm-task-decomposition-auctioneer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Multi-agent swarm combinatorial auctioneer decomposing objectives and allocating subtasks based on cost, latency, and expertise bids.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "alphaparkinc",
+  "category": "multi-agent-orchestration",
+  "tags": [
+    "swarm-auction",
+    "task-decomposition",
+    "multi-agent-systems",
+    "bidding-protocol",
+    "subtask-allocation"
+  ],
+  "inputs": {
+    "compound_objective": {
+      "type": "string",
+      "default": "Refactor code, run tests, write docs"
+    }
+  },
+  "outputs": {
+    "auction_id": {
+      "type": "string"
+    },
+    "subtasks_decomposed_count": {
+      "type": "integer"
+    },
+    "swarm_allocation_efficiency": {
+      "type": "number"
+    },
+    "auction_status": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
